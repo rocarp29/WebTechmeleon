@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <script src="https://kit.fontawesome.com/6b8fa41a9d.js" crossorigin="anonymous"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <title>techmeleon</title>
+
+</head>
+<body>
+
+<header>
+    <div class="container">
+
+        <div class="logo">
+            <img class="blanco" src="./imagenes/logoblanco.png" alt="logotipo">
+
+        </div>
+
+        <div class="menu">
+            <ul>
+                <li><a class="inicio" href="#">INICIO</a></li>
+                <li><a href="#nosotros">NOSOTROS</a></li>
+                <li><a href="#servicios">SERVICIOS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a class="espanol" href="#">ES</a></li>
+                <li><a class="ingles" href="#">EN</a></li>
+            </ul>
+      
+           </div>
+            
+        </div>
+  <hr class="lineanav">
+ 
+
+<div  id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./imagenes/img1.png" class="d-block w-100" alt="insomnia">
+    </div>
+    <div class="carousel-item">
+      <img src="./imagenes/img2.png" class="d-block w-100" alt="ororubi">
+    </div>
+    <div class="carousel-item">
+      <img src="./imagenes/img3.png" class="d-block w-100" alt="linyoga">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+<a name="nosotros">
+<img class="iniciopag" src="./imagenes/otro.png"></a>
+
+
+<a name="servicios">
+  <img class="tituloservicios" src="./imagenes/TituloServicios.png"></a>
+
+
+<div class="IconosServicios">
+
+<img class="iconoP" src="./imagenes/Web.png">
+
+<img class="iconoD" src="./imagenes/DiseñoGraficoBtn.png">
+
+<img class="iconoS" src="./imagenes/Soporte.png">
+
+</div>
+
+
+<div class="BtnServicios">
+    
+<a href="paginaswebs"><button id="webs">Páginas Webs</a></button>
+
+<a href="diseñografico"><button id="disenio">Diseño Gráfico</button></a>
+
+<a href="soporteit"><button id="soporte">Soporte IT</button></a>
+
+</div>
+
+
+
+
+<div class="textosiconos">
+
+<img class="txtw" src="./imagenes/txtw.png">
+
+<img class="txtd" src="./imagenes/txtd.png">
+
+<img class="txts" src="./imagenes/txts.png">
+
+</div>
+
+
+<div class="textoslargos">
+
+<a name="paginaswebs"><img class="textolargow" src="./imagenes/PAGINAS.png">
+
+<a name="diseñografico"> <img class = "textolargoD"  src="./imagenes/D.png">
+
+<a name="soporteit"><img class="textolargoIT" src="./imagenes/SoporteIT.png">
+
+</div>
+
+
+</body>
+
+<style type="text/css">
+
+*{
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 0;
+
+}
+
+body{
+  background-image: url(Fondo.png);
+  background-repeat:no-repeat;
+  background-size: 100%;
+}
+
+/*CSS Navbar*/
+
+
+.container{
+  max-width: 1366px;
+  text-align: center;
+  background: black;
+  height: 131px;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+
+}
+
+.logo{
+  width: 33.33%;
+  background-color: black;
+  display: inline-block;
+}
+
+.blanco{
+  width: 36%;
+  height: 95%;
+  float: left;
+  margin-left: 8%;
+  }
+
+.menu{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6.7%;
+  width: 53%;
+  float: right;
+  margin-left: 10%;
+  font-family: Helvetica Neue LT Com, sans-serif;
+  color: white;  
+
+}
+
+ul li{
+    list-style-type: none;
+    float: left;
+    padding: 10px;
+} 
+
+a{
+    text-decoration: none;
+    color: white;
+    outline: none;
+}
+
+
+
+.inicio
+{
+    color: #F9C736;
+}
+
+.espanol{
+color:#F9C736;	
+}
+
+
+
+.ingles{
+color: #F9C736;	
+}
+
+
+.lineanav{
+  
+  background: linear-gradient(to right, #FFCC33, #E2597E);
+  width: 100%;
+  height: 5px;
+  margin-top: 0;
+  padding: 0%;
+  margin-bottom: 0;
+  position: fixed;
+  top: 13%;
+  z-index:1000;
+  margin-top: 3.3%;
+
+}
+
+
+.carousel-item {
+  background-color: black;
+  width: 100%;
+  height: 557.1px;
+ margin-top:5%;
+ padding: 0;
+}
+
+.iniciopag{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+
+.tituloservicios{
+
+  width: 50%;
+  height: 5%;
+  margin-left: 10.2%;
+
+}
+
+/*Iconos servicios con hover de imagenes*/
+
+
+.IconosServicios{
+  margin-top: 2%;
+  
+}
+
+.iconoP{
+  width: 12%;
+  height: 12%;
+  margin-left: 15%;  
+}
+
+.iconoD{
+  width: 12%;
+  height: 12%;
+  margin: 0 auto;
+  margin-left: 18%;
+}
+
+
+.iconoS{
+  width: 12%;
+  height: 12%;
+  margin-left: 19%;
+}
+
+/*Botones servicios*/
+
+button{
+  margin-top: 10%;
+}
+/* #webs{
+  margin-left: 16.5%;
+} */
+
+#disenio {
+  width: 12%;
+  height: 35px;
+  background: black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: condensed;
+  color: white;
+  margin-top: 0%;
+  margin-left: 15%;
+  font-family: Helvetica Neue LT Com, sans-serif;
+  float: center;
+}
+
+#webs {
+  width: 12%;
+  height: 35px;
+  background: black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: condensed;
+  color: white;
+  margin-top: 0%;
+  font-family: Helvetica Neue LT Com, sans-serif;
+  float: left;
+
+}
+
+#soporte {
+  width: 12%;
+  height: 35px;
+  background: black;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: condensed;
+  color: white;
+  margin-top: 0%;
+  margin-right: 10.8%;
+  font-family: Helvetica Neue LT Com, sans-serif;
+  float: right; */
+ }
+
+#disenio:hover{
+  width: 12%;
+  height: 35px;
+  background: linear-gradient(to right, #9380B5, #48B2AC);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: condensed;
+  color: black;
+  font-family: Helvetica Neue LT Com, sans-serif;
+
+}
+
+#webs:hover{
+
+  width: 12%;
+  height: 35px;
+  background: linear-gradient(to right, #FFCC33, #E2597E);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: condensed;
+  color: black;
+  font-family: Helvetica Neue LT Com, sans-serif;
+
+}
+
+#soporte:hover{
+  width: 12%;
+  height: 35px;
+  background: linear-gradient(to right, #FFCC33, #E2597E);
+  border-radius: 20px;
+  text-align: center;
+  font-weight: condensed;
+  color: black;
+  font-family: Helvetica Neue LT Com, sans-serif;
+
+}
+
+
+button{
+
+  margin: 50px;
+  margin-left: 15%;
+
+}
+
+.BtmServicios{
+
+  margin-top: 5%;
+  margin-bottom: 0;
+
+}
+
+/*Textos cortos*/
+
+.textosiconos{
+  display: inline-block;
+}
+
+
+.txtw{
+width: 250px;
+margin-left: 12%;  
+margin-top: -3%;
+}
+
+.txtd{
+  width: 20%;
+  margin-left: 11.3%;
+  margin-top: -3%;
+}
+
+.txts{
+  width: 20%;
+  margin-left: 73%;
+  margin-top: -10%;
+}
+
+
+/*Textos Largos*/
+
+
+.textolargow{
+  width: 85%;
+  margin-left: 10%; 
+}
+
+.textolargoD{
+  width: 85%;
+  margin-left: 10%; 
+}
+
+.textolargoIT{
+  width: 85%;
+  margin-left: 9.5%;
+
+}
+
+
+
+
+/*
+.carousel-indicators li{
+      width:5px;
+     height: 1px;
+     -moz-border-radius: 10%;
+     -webkit-border-radius: 10%;
+     border-radius: 50%;
+     background: white;
+} 
+
+*/
+
+
+
+</style>
+
+
+
+</html>
